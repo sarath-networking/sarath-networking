@@ -1,5 +1,33 @@
-## Hi there 👋
+# Hi, I'm Sarath
 
+Network Infrastructure Engineer with experience in:
+
+- Enterprise networking
+- Data centre operations
+- Cloud infrastructure
+- Network security
+- Infrastructure monitoring
+- Large-scale migration projects
+
+## Certifications
+
+- Cisco CCNP Enterprise
+- AWS Certified Solutions Architect – Associate
+- CompTIA Security+
+- CompTIA Network+
+
+## Areas of Interest
+
+- Cloud Networking
+- Infrastructure Automation
+- Network Security
+- High Availability Systems
+- SD-WAN
+- Monitoring & Observability
+
+## Current Focus
+
+Building infrastructure-focused public projects and technical documentation related to enterprise networking and cloud environments.
 <!--
 **sarath-networking/sarath-networking** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
