@@ -90,7 +90,7 @@ This topology represents a simplified enterprise network architecture:
 - VLAN-based segmentation for traffic isolation
 - Optional load balancing layer
 
-![Network Diagram](diagrams/network-topology.png)
+![Network Diagram](./diagrams/network-topology.png)
 
 ---
 
