@@ -1,44 +1,132 @@
-# Hi, I'm Sarath
+# Enterprise Network Migration Toolkit
 
-Network Infrastructure Engineer with experience in:
+## Overview
 
-- Enterprise networking
-- Data centre operations
-- Cloud infrastructure
-- Network security
-- Infrastructure monitoring
-- Large-scale migration projects
+This repository showcases practical approaches to enterprise-scale network migration and infrastructure deployment, based on real-world experience in broadband and large-scale network environments.
 
-## Certifications
+It is designed to demonstrate structured engineering practices used in migrating production networks with minimal downtime and high reliability.
 
-- Cisco CCNP Enterprise
-- AWS Certified Solutions Architect – Associate
-- CompTIA Security+
-- CompTIA Network+
+---
 
-## Areas of Interest
+## Key Highlights
 
-- Cloud Networking
-- Infrastructure Automation
-- Network Security
-- High Availability Systems
-- SD-WAN
-- Monitoring & Observability
+- Migration of 11,000+ broadband users from MikroTik to Juniper infrastructure
+- Experience supporting large-scale ISP and enterprise network environments
+- Focus on reliability, scalability, and operational stability
 
-## Current Focus
+---
 
-Building infrastructure-focused public projects and technical documentation related to enterprise networking and cloud environments.
-<!--
-**sarath-networking/sarath-networking** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Real-World Challenges
 
-Here are some ideas to get you started:
+Large-scale network migrations involve several critical challenges:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Managing downtime in live production environments
+- Handling configuration differences between vendors (MikroTik vs Juniper)
+- Maintaining routing stability during protocol transitions (OSPF, BGP)
+- Coordinating across NOC teams, field engineers, and vendors
+- Ensuring rollback readiness in case of failure
+
+These challenges require structured planning, monitoring, and execution.
+
+---
+
+## Migration Approach
+
+### Pre-Migration
+- Assess existing infrastructure and dependencies
+- Backup configurations and define rollback strategy
+- Validate design and capacity planning
+
+### During Migration
+- Configure new infrastructure (Juniper environment)
+- Monitor traffic and routing behaviour
+- Validate OSPF/BGP stability
+- Minimise downtime during cutover
+
+### Post-Migration
+- Verify user connectivity
+- Monitor performance metrics
+- Resolve incidents and optimise configurations
+- Update documentation
+
+---
+
+## Failure Scenario & Mitigation
+
+**Scenario:**  
+Routing instability during migration caused intermittent connectivity issues.
+
+**Action Taken:**
+- Verified OSPF neighbour states
+- Reviewed route redistribution policies
+- Identified configuration mismatch
+- Performed controlled rollback
+- Re-applied corrected configuration
+
+**Outcome:**  
+Network stability restored with minimal downtime and no major service disruption.
+
+---
+
+## Technologies & Concepts
+
+- Juniper (EX, MX Series)
+- Cisco Switching & Routing
+- MPLS
+- OSPF / BGP
+- VLAN Segmentation
+- Network Monitoring Tools
+- Wireshark
+- PowerShell (basic automation)
+
+---
+
+## Sample Network Topology
+
+This topology represents a simplified enterprise network architecture:
+
+- Firewall layer (Fortinet / Palo Alto style)
+- Dynamic routing using OSPF
+- VLAN-based segmentation for traffic isolation
+- Optional load balancing layer
+
+![Network Diagram](diagrams/network-topology.png)
+
+---
+
+## Repository Structure
+
+### migration-planning/
+Migration checklists, rollback procedures, and planning strategies
+
+### scripts/
+Basic monitoring and health-check scripts for infrastructure visibility
+
+### diagrams/
+Network topology and architecture diagrams
+
+---
+
+## Objectives
+
+- Improve migration reliability
+- Reduce downtime risks
+- Strengthen operational visibility
+- Support scalable infrastructure practices
+
+---
+
+## Lessons Learned
+
+- Migration success depends on rollback readiness
+- Continuous monitoring is critical
+- Cross-team coordination reduces risk
+- Standardised deployment improves consistency
+- Security validation must be integrated into every phase
+
+---
+
+## Disclaimer
+
+All content is for educational and demonstration purposes only.  
+No confidential or production-sensitive data is included.
