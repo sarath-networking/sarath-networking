@@ -126,22 +126,6 @@ Network topology and architecture diagrams
 
 ---
 
-# Check DNS resolution
-Write-Output "`nChecking DNS resolution..."
-
-try {
-    Resolve-DnsName google.com -ErrorAction Stop
-    Write-Output "DNS resolution working"
-} catch {
-    Write-Output "DNS resolution failed"
-}
-
-# End of script
-Write-Output "`nHealth check completed."
-
-–––
-
-
 ## Disclaimer
 
 All content is for educational and demonstration purposes only.  
