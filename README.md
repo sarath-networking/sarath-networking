@@ -79,9 +79,9 @@ Certification                                    Issuer    Year    Status
 CCNP Enterprise (Core + Advanced Infra)          Cisco     2024    Active
 AWS Solutions Architect – Associate              AWS       2024    Active
 CCNA                                             Cisco     2017    Active
-CompTIA Security+                                CompTIA   —       Active
-CompTIA Network+                                 CompTIA   —       Active
-CompTIA A+                                       CompTIA   —       Active
+CompTIA Security+                                CompTIA   2026    Active
+CompTIA Network+                                 CompTIA   2026    Active
+CompTIA A+                                       CompTIA   2026    Active
 ```
 
 ---
