@@ -1,132 +1,69 @@
-# Enterprise Network Migration Toolkit
+# Hi, I'm Sarath 👋
 
-## Overview
-
-This repository showcases practical approaches to enterprise-scale network migration and infrastructure deployment, based on real-world experience in broadband and large-scale network environments.
-
-It is designed to demonstrate structured engineering practices used in migrating production networks with minimal downtime and high reliability.
+**Network Infrastructure Engineer** with 8+ years of hands-on experience designing, migrating, and operating enterprise multi-site networks.
 
 ---
 
-## Key Highlights
+## What I Do
 
-- Migration of 11,000+ broadband users from MikroTik to Juniper infrastructure
-- Experience supporting large-scale ISP and enterprise network environments
-- Focus on reliability, scalability, and operational stability
-
----
-
-## Real-World Challenges
-
-Large-scale network migrations involve several critical challenges:
-
-- Managing downtime in live production environments
-- Handling configuration differences between vendors (MikroTik vs Juniper)
-- Maintaining routing stability during protocol transitions (OSPF, BGP)
-- Coordinating across NOC teams, field engineers, and vendors
-- Ensuring rollback readiness in case of failure
-
-These challenges require structured planning, monitoring, and execution.
+- Design and operate large-scale network infrastructure (Cisco, Juniper, Palo Alto, Fortinet, Arista)
+- Plan and execute production network migrations with zero or minimal downtime
+- Build tools that automate what network engineers do manually
 
 ---
 
-## Migration Approach
+## Migrations Delivered
 
-### Pre-Migration
-- Assess existing infrastructure and dependencies
-- Backup configurations and define rollback strategy
-- Validate design and capacity planning
-
-### During Migration
-- Configure new infrastructure (Juniper environment)
-- Monitor traffic and routing behaviour
-- Validate OSPF/BGP stability
-- Minimise downtime during cutover
-
-### Post-Migration
-- Verify user connectivity
-- Monitor performance metrics
-- Resolve incidents and optimise configurations
-- Update documentation
+| Project | Scale | Vendors |
+|---------|-------|---------|
+| Kerala Fibre Optic Network (KFON) | 500km fibre, 30+ PoPs, 450+ end offices | Cisco Nexus, Juniper, Fortinet, Arista |
+| Railwire Broadband | 11,000+ customers migrated | MikroTik → Juniper |
+| Kerala Vision Broadband | 15,000+ customers migrated | Multi-vendor (Cisco, Juniper, Huawei) |
 
 ---
 
-## Failure Scenario & Mitigation
+## Featured Project
 
-**Scenario:**  
-Routing instability during migration caused intermittent connectivity issues.
+### [NetMigrate](https://github.com/sarath-networking/netmigrate)
+Network Migration Planner & Validator — give it your old config and new config, it tells you what's missing before you cut over.
 
-**Action Taken:**
-- Verified OSPF neighbour states
-- Reviewed route redistribution policies
-- Identified configuration mismatch
-- Performed controlled rollback
-- Re-applied corrected configuration
+```
+python3 -m netmigrate old_device.cfg new_device.cfg
+```
 
-**Outcome:**  
-Network stability restored with minimal downtime and no major service disruption.
+Parses Cisco IOS and Juniper JunOS. Generates validation checklists, rollback plans, and migration reports.
 
 ---
 
-## Technologies & Concepts
+## Certifications
 
-- Juniper (EX, MX Series)
-- Cisco Switching & Routing
-- MPLS
-- OSPF / BGP
-- VLAN Segmentation
-- Network Monitoring Tools
-- Wireshark
-- PowerShell (basic automation)
+- CCNP Enterprise (Core + Advanced Infrastructure)
+- AWS Certified Solutions Architect — Associate
+- CCNA | CompTIA A+ | Network+ | Security+
 
 ---
 
-## Sample Network Topology
+## Tech Stack
 
-This topology represents a simplified enterprise network architecture:
+**Routing & Switching:** BGP, OSPF, MPLS, SD-WAN, VLANs, STP, QoS
 
-- Firewall layer (Fortinet / Palo Alto style)
-- Dynamic routing using OSPF
-- VLAN-based segmentation for traffic isolation
-- Optional load balancing layer
+**Firewalls:** Palo Alto NGFW, Fortinet FortiGate, Cisco ASA
 
-![Network Diagram](https://raw.githubusercontent.com/sarath-networking/enterprise-network-migration-toolkit/main/diagrams/network-topology.png)
+**Cloud:** AWS (VPC, EC2, IAM, CloudWatch)
 
----
+**Monitoring:** SolarWinds NPM, Wireshark, PRTG, Cacti
 
-## Repository Structure
-
-### migration-planning/
-Migration checklists, rollback procedures, and planning strategies
-
-### scripts/
-Basic monitoring and health-check scripts for infrastructure visibility
-
-### diagrams/
-Network topology and architecture diagrams
+**Automation:** Python, PowerShell
 
 ---
 
-## Objectives
+## Currently
 
-- Improve migration reliability
-- Reduce downtime risks
-- Strengthen operational visibility
-- Support scalable infrastructure practices
-
----
-
-## Lessons Learned
-
-- Migration success depends on rollback readiness
-- Continuous monitoring is critical
-- Cross-team coordination reduces risk
-- Standardised deployment improves consistency
-- Security validation must be integrated into every phase
+- Building open-source network automation tools
+- Seeking Network Engineer roles in the UK (Skilled Worker visa sponsorship)
+- MSc Computer Science (Distinction) — University of East London
 
 ---
 
-## Disclaimer
-
-All content is for educational and demonstration purposes only.  
-No confidential or production-sensitive data is included.
+📧 sarath0191uk@gmail.com
+🔗 [LinkedIn](https://linkedin.com/in/sarath0191uk)
